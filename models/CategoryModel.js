@@ -7,7 +7,7 @@ const CategorySchema = new Schema({
         unique: true,
     },
     isShown: {
-        type: Boolean,
+        type: Boolean,  
         default: false,
     },
 }, { timestamps: true })

@@ -91,6 +91,7 @@ const EmployersComponent = ({cat_list}) => {
                 <Form.Select required value={preffered_sex_or_gender} onChange={(e) => handleChange(e, 'preffered_sex_or_gender')} >
                     <option value="male">Male</option>
                     <option value="female">Female</option>
+                    <option value="both">Male or Female</option>
                 </Form.Select>
             </Form.Group>
 

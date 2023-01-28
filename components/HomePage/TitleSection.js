@@ -37,7 +37,7 @@ const Homepage = ({cat_list, employers}) => {
               <Row>
                 <CustomCol lg={6} xs={12}>  
                   <h1 style={{fontSize: '40px', fontWeight: '800'}}>WELCOME TO HA SOLUTION!</h1>
-                  <CustomH4>Reprehenderit esse elit do consequat adipisicing voluptate cupidatat exercitation veniam aute tempor deserunt. Cillum tempor ullamco aliqua nostrud. Labore commodo culpa sit adipisicing nisi cupidatat esse do aute nostrud id. Ipsum est commodo laboris sit.</CustomH4>
+                  <CustomH4>Empowering Job Seekers, Supporting Employers</CustomH4>
                 </CustomCol>
                 {/* <CustomCol lg={6} className="d-none d-lg-block position-relative">
                   <CustomImage

@@ -28,7 +28,7 @@ const Footer = () => {
         <Row>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
                 <Col>{translate('logo')}</Col>
-                <FooterDesc>Magna laborum culpa est nulla enim excepteur tempor reprehenderit exercitation excepteur.</FooterDesc>
+                {/* <FooterDesc>Magna laborum culpa est nulla enim excepteur tempor reprehenderit exercitation excepteur.</FooterDesc> */}
                 <Col>Logo</Col>
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">

@@ -115,9 +115,6 @@ const useHooks = ({cat_list}) => {
     // =====================================================
  
     // For Edit Employers
-    
-   
-
     const {edit_company_name,
         edit_cat_of_industry,
         edit_occupation_title,
@@ -165,7 +162,7 @@ const useHooks = ({cat_list}) => {
     // =====================================================
  
 
-    // For Deleting Employers
+    // For Deleting Jobs
         // For DeleteModals
         const [showModalDelete, setShowModalDelete] = useState(false);
         const handleCloseModalDelete = () => setShowModalDelete(false);

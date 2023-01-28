@@ -61,7 +61,7 @@ const BrowseByCategory = ({cat_list, cat_length}) => {
     <BrowseContainer className="mt-5">
         <TitleContainer>
             <Title className="mb-10">{translate('browsebycategory')}</Title>
-            <Subtitle>Aliquip ullamco duis incididunt ea nulla consectetur cillum eu eiusmod dolore cupidatat nulla do in.</Subtitle>
+            {/* <Subtitle>Aliquip ullamco duis incididunt ea nulla consectetur cillum eu eiusmod dolore cupidatat nulla do in.</Subtitle> */}
         </TitleContainer>
         <CarouselRow className="mt-5 mb-5">
             <Carousel responsive={responsive} ssr={true} infinite={true}>
@@ -95,7 +95,7 @@ const BrowseByCategory = ({cat_list, cat_length}) => {
                             </BannerTitleContainer>
                         </Col>
                         <Col lg={2} xs={12} className="d-flex align-items-center justify-content-center mb-3 mb-lg-0">
-                            <BannerTitleDesc className="text-center">Lorem in laborum officia officia sint ex id laborum.</BannerTitleDesc>
+                            {/* <BannerTitleDesc className="text-center">Lorem in laborum officia officia sint ex id laborum.</BannerTitleDesc> */}
                         </Col>
                         <Col lg={3} xs={12} className="d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                             <BrowseCategoryApplyButton onClick={() => router.push("/careers")}><BsPatchCheck />{translate('applynow')}</BrowseCategoryApplyButton>

@@ -107,6 +107,7 @@ const JobDetailsPage = ({employer}) => {
                     </Row>
                 </JobOverview>
                 <JobDesc>
+                    <p>{employer.salary}</p>
                     {parse(`${employer.job_desc}`)}
                 </JobDesc>
                 <hr className="mt-5" />

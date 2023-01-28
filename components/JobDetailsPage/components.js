@@ -79,7 +79,11 @@ export const WorkDesc = styled.span `
     font-weight: 500;
 `
 
-export const JobDesc = styled(Container) ``
+export const JobDesc = styled(Container) `
+
+
+
+`
 
 export const ApplyButton = styled(Button) `
     color: #fff;

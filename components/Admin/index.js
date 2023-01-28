@@ -66,14 +66,14 @@ const Admin = ({ employers, cat_list }) => {
             selected={active === "employers"}
           >
             <HiOutlineUserGroup />
-            Employers
+            Company Jobs
           </CustomDiv>
         </Offcanvas.Body>
       </CustomOffcanvas>
       <Content>
         {active === "employers" && (
           <AddEmpButton variant="primary" onClick={handleShowModal}>
-            Add Employer
+            Add Job
           </AddEmpButton>
         )}
         <br />
@@ -86,7 +86,7 @@ const Admin = ({ employers, cat_list }) => {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Company Name</Modal.Title>
+            <Modal.Title>Add Company Jobs</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <AddEmployersComponent cat_list={cat_list} />

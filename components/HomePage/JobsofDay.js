@@ -27,7 +27,7 @@ const JobsofDay = ({employers, cat_list}) => {
     <JODContainer className="mt-5">
          <TitleContainer>
             <Title className="mb-10">{translate('jobsoftheday')}</Title>
-            <Subtitle>Aliquip ullamco duis incididunt ea nulla consectetur cillum eu eiusmod dolore cupidatat nulla do in.</Subtitle>
+            {/* <Subtitle>Aliquip ullamco duis incididunt ea nulla consectetur cillum eu eiusmod dolore cupidatat nulla do in.</Subtitle> */}
         </TitleContainer>
         <JOBBodyContainer>
           <Row className="d-flex justify-content-center">
@@ -127,7 +127,7 @@ const JobsofDay = ({employers, cat_list}) => {
                         timePosted={moment(employer.createdAt).fromNow()}
                         jobDesc={employer.job_desc.replace(/(<([^>]+)>)/ig, '')}
                         jobTags={employer.job_tags}
-                        jobSalary={`¥${employer.salary}`}
+                        jobSalary={`${employer.salary}`}
                         category={employer.cat_of_industry}
                       />
                     </Col>
@@ -147,7 +147,7 @@ const JobsofDay = ({employers, cat_list}) => {
                       timePosted={moment(employer.createdAt).fromNow()}
                       jobDesc={employer.job_desc.replace(/(<([^>]+)>)/ig, '')}
                       jobTags={employer.job_tags}
-                      jobSalary={`¥${employer.salary}`}
+                      jobSalary={`${employer.salary}`}
                       category={employer.cat_of_industry}
                     />
                   </Col>
