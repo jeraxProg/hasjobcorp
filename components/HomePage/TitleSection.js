@@ -19,7 +19,8 @@ import {
   CustomButton,
   FormControl,
   CustomImage,
-  CustomImageStory
+  CustomImageStory,
+  CustomH1
 } from './components'
 
 
@@ -36,7 +37,7 @@ const Homepage = ({cat_list, employers}) => {
             <ContentContainer>
               <Row>
                 <CustomCol lg={6} xs={12}>  
-                  <h1 style={{fontSize: '40px', fontWeight: '800'}}>WELCOME TO HA SOLUTION!</h1>
+                  <CustomH1 >WELCOME TO HA SOLUTION!</CustomH1>
                   <CustomH4>Empowering Job Seekers, Supporting Employers</CustomH4>
                 </CustomCol>
                 {/* <CustomCol lg={6} className="d-none d-lg-block position-relative">

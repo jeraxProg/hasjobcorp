@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import EmployerComponent from "./Employer";
-import { BtnContainer, CustomCard } from "./components";
+import { BtnContainer, CustomCard, CustomCardContainer} from "./components";
 import useHooks from './hooks'  
 
 const EmployersComponent = ({ employer, cat_list }) => {
@@ -28,6 +28,7 @@ const EmployersComponent = ({ employer, cat_list }) => {
 
   return (
     <>
+    <CustomCardContainer>
       <CustomCard>
         <Card.Header>{employer.company_name}</Card.Header>
         <Card.Body>
@@ -51,6 +52,7 @@ const EmployersComponent = ({ employer, cat_list }) => {
           </BtnContainer>
         </Card.Body>
       </CustomCard>
+      </CustomCardContainer>
 
       <Modal
         show={showModal}
@@ -84,7 +86,7 @@ const EmployersComponent = ({ employer, cat_list }) => {
           <Modal.Title>Delete</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <h1>Do you want to delete this data?</h1>
+        Do you want to delete this data?
         </Modal.Body>
         <Modal.Footer>
         <Button variant="danger" onClick={() => handleDelete(employer._id)}>
@@ -95,6 +97,7 @@ const EmployersComponent = ({ employer, cat_list }) => {
           </Button>
         </Modal.Footer>
       </Modal>
+   
     </>
   );
 };

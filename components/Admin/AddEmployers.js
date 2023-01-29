@@ -110,12 +110,17 @@ const EmployersComponent = ({cat_list}) => {
 
             <Form.Group className="mb-3">
                 <Form.Label>Job Type</Form.Label>
-                <Form.Control type="text" placeholder="Enter Full Time" value={job_type} onChange={(e) => handleChange(e, 'job_type')} />
+                <Form.Select value={job_type} onChange={(e) => handleChange(e, 'job_type')} required>
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>   
+                        <option value="fulltimeparttime">Full time / Part Time</option>   
+                </Form.Select>
+                {/* <Form.Control type="text" placeholder="Enter Full Time" value={job_type} onChange={(e) => handleChange(e, 'job_type')} /> */}
             </Form.Group>
 
             <Form.Group className="mb-3">
                 <Form.Label>Company email</Form.Label>
-                <Form.Control type="email" placeholder="Enter Category" value={company_email} onChange={(e) => handleChange(e, 'company_email')}/>
+                <Form.Control type="email" placeholder="Enter email of the company" value={company_email} onChange={(e) => handleChange(e, 'company_email')}/>
             </Form.Group>
 
             <Form.Group className="mb-3">

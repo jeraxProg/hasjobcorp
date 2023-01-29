@@ -28,8 +28,7 @@ const Footer = () => {
         <Row>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
                 <Col>{translate('logo')}</Col>
-                {/* <FooterDesc>Magna laborum culpa est nulla enim excepteur tempor reprehenderit exercitation excepteur.</FooterDesc> */}
-                <Col>Logo</Col>
+                <FooterDesc>We are a company dedicated to connecting job seekers with top employers in their fields.</FooterDesc>
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
                 <Title className="mb-4">Resources</Title>
@@ -75,7 +74,7 @@ const Footer = () => {
             </Col>
         </Row>
         <FooterBottom className="mt-5 gap-2 gap-md-0">
-            <Col className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">Copyright {moment().year()}. (Company Name) all right reserved</Col>
+            <Col className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">Copyright {moment().year()}. (HA SOLUTION) all right reserved</Col>
             <Col className="d-flex col-12 col-md-6">
                 {/* <Col className="d-flex justify-content-center">Privacy Policy</Col> */}
                 {/* <Col className="d-flex justify-content-center">Terms & Conditions</Col> */}

@@ -25,12 +25,12 @@ export const Subtitle = styled.h3 `
 
 // TITLE SECTION
 export const CustomContainer = styled(Container) `
-    background-image: url('/images/jobs-detail-page/background.jpg');
-    background-size: 100% auto;
+    background-image: url('/images/jobs-detail-page/ha.png');
+    background-size: 50% auto;
     background-color: #f6f6f6;
     background-repeat: no-repeat;
     position: relative;
-    background-position: 100% 0%;
+    background-position: 80% 15%;
     background-attachment: fixed;
 `
 
@@ -50,6 +50,11 @@ export const CustomCol = styled(Col) `
 
 export const CustomH4 = styled.h4 `
     line-height: 25px;
+`
+
+export const CustomH1 = styled.h1 `
+font-size: 40px;
+font-weight: 800
 `
 
 export const ContentContainer = styled(Container) `

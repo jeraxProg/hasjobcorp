@@ -58,8 +58,8 @@ const Index = ({employers, numOfEmployers}) => {
           <ContentContainer>
             <Row>
               <CustomCol xs={12} className="text-center">
-                <CustomH1 style={{fontSize: '48px', fontWeight: '800'}}><BlueSpan>{numOfEmployers} {translate('totalJobs')}</BlueSpan>{translate('availablenow')}</CustomH1>
-                <CustomH4 className="m-auto">Reprehenderit esse elit do consequat adipisicing voluptate cupidatat exercitation veniam aute tempor deserunt. Cillum tempor ullamco aliqua nostrud. Labore commodo culpa sit adipisicing nisi cupidatat esse do aute nostrud id. Ipsum est commodo laboris sit.</CustomH4>
+                <CustomH1 ><BlueSpan>{numOfEmployers} {translate('totalJobs')}</BlueSpan>{translate('availablenow')}</CustomH1>
+                {/* <CustomH4 className="m-auto"></CustomH4> */}
               </CustomCol>
             </Row>
             <Row className="d-flex justify-content-center">
@@ -151,7 +151,7 @@ const Index = ({employers, numOfEmployers}) => {
                     timePosted={moment(employer.createdAt).fromNow()}
                     jobDesc={employer.job_desc.replace(/(<([^>]+)>)/ig, '')}
                     jobTags={employer.job_tags}
-                    jobSalary={`$${employer.salary}`}
+                    jobSalary={`${employer.salary}`}
                     category={employer.cat_of_industry}
                   />
                 </Col>

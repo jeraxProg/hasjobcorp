@@ -19,7 +19,7 @@ const useHooks = (employers, numOfEmployers) => {
   const [pageCount, setpageCount] = useState(0)
 
   // Changed this value if you change your limit value in the backend as well, vice versa 
-  let limit = 18;
+  let limit = 6;
 
   useEffect(() => {
     setpageCount(Math.ceil(numOfEmployers/limit))

@@ -11,7 +11,8 @@ import {
   Title, 
   Subtitle, 
   JOBBodyContainer,
-  CustomJobCatButton
+  CustomJobCatButton,
+  CustomH1
 } from './components'
 
 const JobsofDay = ({employers, cat_list}) => {
@@ -32,7 +33,7 @@ const JobsofDay = ({employers, cat_list}) => {
         <JOBBodyContainer>
           <Row className="d-flex justify-content-center">
               {!cat_list ? (
-                <h1>No Category List Found!</h1>
+                <CustomH1>No Category List Found!</CustomH1>
               ):
               (cat_list.map((category, i) => {
                 return (
@@ -112,7 +113,7 @@ const JobsofDay = ({employers, cat_list}) => {
           </Row>
           <Row className="mt-5">
             {!employers ? 
-              (<h1>EEMMPPTTYY</h1>) :
+              (<CustomH1>EEMMPPTTYY</CustomH1>) :
               (isSelected === '' ? (
                 employers.reverse().map((employer, i) => {
                   return (

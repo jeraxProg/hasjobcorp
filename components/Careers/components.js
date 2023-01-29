@@ -56,8 +56,9 @@ export const CustomCol = styled(Col) `
 `
 
 export const CustomH1 = styled.h1 `
-    font-size: 28px !important;
+    font-size: 48px !important;
     line-height: 35px;
+    font-weight: 800;
 `
 
 export const CustomH4 = styled.h4 `

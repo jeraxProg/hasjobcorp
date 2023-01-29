@@ -36,7 +36,14 @@ export const BtnContainer = styled.div `
     gap: 10px;
 `
 
+export const CustomCardContainer = styled.div `
+display: flex;
+flex-direction: row;
+
+`
+
 export const CustomCard = styled(Card) `
+    width: 400px;
     margin-bottom: 20px;
     &: hover {
         cursor: pointer;
