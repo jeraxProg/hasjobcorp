@@ -28,7 +28,7 @@ const Footer = () => {
         <Row>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
                 <Col>{translate('logo')}</Col>
-                <FooterDesc>We are a company dedicated to connecting job seekers with top employers in their fields.</FooterDesc>
+                <FooterDesc>{translate('footerDesc')}</FooterDesc>
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
                 <Title className="mb-4">Resources</Title>

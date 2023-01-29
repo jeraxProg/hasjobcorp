@@ -13,6 +13,7 @@ import {CustomContainer, CustomNav} from './components';
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { searchEmployers } from '../../utils/client/employers';
+import { CustomH1 } from '../HomePage/components';
 
 
 const NavbarComponent = () => {
@@ -45,6 +46,9 @@ const NavbarComponent = () => {
       } else if (route == 'about-us') {
         router.push('/about-us')
       }
+       else if (route == 'recruitment-info') {
+        router.push('/recruitment-info')
+      }
     }
 
     return (
@@ -53,7 +57,7 @@ const NavbarComponent = () => {
         {['lg'].map((expand) => (
           <Navbar key={expand} expand={expand}>
             <Container>
-              <Navbar.Brand href="/">{translate('logo')}</Navbar.Brand>
+              <CustomH1><Navbar.Brand href="/">{translate('logo')}</Navbar.Brand></CustomH1>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -70,6 +74,7 @@ const NavbarComponent = () => {
                     <CustomNav onClick={() => handleRoute('home')} selected={router.pathname === '/'} >{translate('home')}</CustomNav>
                     {/* <CustomNav href="/jobs-list" selected={router.pathname === '/jobs-list'}>Jobs List</CustomNav> */}
                     <CustomNav onClick={() => handleRoute('careers')} selected={router.pathname === '/careers'}>{translate('careers')}</CustomNav>
+                    <CustomNav onClick={() => handleRoute('recruitment-info')} selected={router.pathname === '/recruitment-info'}>{translate('rectruitmentnav')}</CustomNav>
                     <CustomNav onClick={() => handleRoute('about-us')} selected={router.pathname === '/about-us'}>{translate('aboutus')}</CustomNav>
                     {/* <CustomNav href="/blogs" selected={router.pathname === '/blogs'}>Blogs</CustomNav> */}
                     {/* <Nav.Link href="#action2">Link</Nav.Link>

@@ -58,6 +58,27 @@ export const BodyContainer = styled.div `
 
 export const BodyWrapper = styled.div `
 width: 70%
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`
+export const BodyWrapperInfo = styled.div `
+width: 70%;
+padding: 30px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: #FDE0A3;
+`
+export const CustomSpanTitle = styled.span`
+font-size: 25px;
+font-weight: bold;
+`
+export const CustomSpan = styled.span`
+font-size: 20px;
+`
+export const CustomP = styled.p`
+font-size: 20px;
+
+padding-top: 10px;
+text-align: justify;
+font-weight: 600;
 `
 
 export const BodyTitle = styled.h2 `

@@ -295,12 +295,14 @@ export const JobsCard = styled.div `
     margin-bottom: 24px;
     position: relative;
     background: #f8faff;
+    cursor: pointer;
 
     &:hover {
         border-color: #b4c0e0;
         background-color: #fff;
         transform: translateY(-3px);
         transition: all .25s cubic-bezier(.02,.01,.47,1);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
         .components__JobsCardBody-sc-22cbuj-34 {
             .price-per-hour {
@@ -393,7 +395,7 @@ export const JobsCardButton = styled(Button) `
     border: unset;
 
     &:hover {
-        background-color: ${props => props.theme.common.hover_color};
+        background-color: #254181;
     }
 `
 
@@ -486,4 +488,15 @@ export const CustomDesc = styled.h1 `
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
+`
+
+
+//About us
+
+export const CustomH2 = styled.h2 `
+    font-size: 30px;
+    margin: 30px 0;
+    font-style: italic;
+
+
 `

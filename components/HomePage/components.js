@@ -411,7 +411,7 @@ export const JobsCardButton = styled(Button) `
 
 // ADS SECTION
 export const AdsContainer = styled.div `
-    margin: 100px 0; 
+    margin: 30px 0; 
 `
 
 export const BoxImageJob = styled.div `
@@ -436,7 +436,7 @@ export const FigureImage = styled.div `
 
     & > img {
         border-radius: 32px;
-        max-width: 80%;
+        max-width: 100 %;
     }
 `
 

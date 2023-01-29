@@ -31,7 +31,7 @@ const Ads = () => {
             <Row>
                 <Col className="col-12 col-lg-6">
                     <BoxImageJob>
-                        <BoxImageOne
+                        {/* <BoxImageOne
                             // loader={myLoader}
                             src="/images/home-page/img-chart.png"
                             alt=""
@@ -48,14 +48,14 @@ const Ads = () => {
                             height={200}
                             quality={100}
                             className="d-none d-lg-block"
-                        />
+                        /> */}
                         <FigureImage>
                             <Image
                                 // loader={myLoader}
                                 src="/images/home-page/img1.png"
                                 alt=""
-                                width={520}
-                                height={470}
+                                width={500}
+                                height={400}
                                 quality={100}
                             />
                         </FigureImage>

@@ -21,6 +21,24 @@ export const translationsEn = {
     vision: "Our vision is to be a recruitment agency of choice for our clients based on the range and quality of our services. We will fulfill our client`s needs to get the right people for the right jobs. Our staffs also strive for being the preferred platform for job seekers to discover and pursue exciting careers in ideal organizations. To be recognized as the premier service provider by providing our clients, their customers, staff, and partners with superior services.",
     missionTitle: "Mission",
     visionTitle: "Vision",
+    welcome: "WELCOME TO HA SOLUTION!",
+    empowering: "Empowering Job Seekers, Supporting Employers",
+    footerDesc:"We are a company dedicated to connecting job seekers with top employers in their fields.",
+    value: "Value",
+    people:"People",
+    peopleDesc: "We care of people and the role of work in their lives. We respect and trust people as individuals and help them achieve their work and life goals. We assist people to develop their careers through planning, work, coaching and training. We recognize the contributions of all our staff, clients, and candidates to our success. We encourage and reward achievement.",
+    knowledge: "Knowledge",
+    knowledgeDesc: "We share our knowledge, expertise, and resources to help everyone understand what matters in the world of work now, what is happening next, and how to respond. We positively listen to and act on this information to improve our relationships, solutions, and services. We positively pursue the development and adoption of these best practices.",
+    rectruitmentnav: "Recruitment Information",
+    forcompaniesTitle: "For Companies: ",
+    companiesSpan:"We will prepare for excellent applicants and manage them in accordance with your company's security policy.",
+    customP1: "HA solution helps you find good applicants who can solve the problems of your company. ",
+    customP2:" We will mediate them so that the relationships between employees and customers can go well.",
+    customP3:" We have lots of applicants and make it easier for you to find the most suitable ones for your company.",
+    customP4:" When committing to an HA solution, we will manage it properly so that there is no trouble between the company and the applicant.",
+
+
+    
 }
 
 export const translationsJa = { 
@@ -46,4 +64,19 @@ export const translationsJa = {
     vision: "私たちのビジョンは、サービスの範囲と品質に基づいて、お客様に選ばれる人材紹介会社になることです。適切な仕事に適切な人材を確保するというクライアントのニーズを満たします。私たちのスタッフはまた、求職者が理想的な組織でエキサイティングなキャリアを発見し、追求するための好ましいプラットフォームになるよう努めています.クライアント、その顧客、スタッフ、およびパートナーに優れたサービスを提供することにより、最高のサービスプロバイダーとして認められること。",
     missionTitle: "ミッション",
     visionTitle: "ヴィジョン",
+    welcome: "HAソリューションへようこそ",
+    empowering: "求職者に力を与え、雇用主をサポート",
+    footerDesc:"私たちは、求職者とその分野のトップ雇用者をつなぐことに専念している会社です。",
+    value:"価値",
+    people: "人",
+    peopleDesc: "私たちは人々とその生活における仕事の役割を気にかけています。 私たちは人々を個人として尊重し、信頼し、仕事と生活の目的を達成できるようにします。 私たちは、計画、仕事、コーチング、トレーニングを通じて、人々のキャリア開発を支援します。 私たちは、スタッフ、クライアント、候補者など、私たちの成功へのすべての貢献を認識しています。 私たちは達成を奨励し、報います。",
+    knowledge: "知識",
+    knowledgeDesc: "私たちは知識、専門知識、リソースを共有して、仕事の世界で今何が重要で、次に何が起こっているのかを誰もが 理解し、対応する方法を理解できるようにします。 私たちは、関係、ソリューション、およびサービスを改善するために、この情報に積極的に耳を傾け、それに基づいて行動します。 私たちは、これらのベストプラクティスの開発と採用を積極的に追求しています。",
+    rectruitmentnav: "採用情報",
+    forcompaniesTitle: "企業様向け: ",
+    companiesSpan:"優良な応募者をプロデュースし、御社の安心ポリシーで管理いたします。",
+    customP1: "HAソリューションは、あなたの会社の問題を回避するために良い応募者を見つけるのに役立ちます.",
+    customP2: "従業員とお客様の関係を円滑に進められるよう仲介いたします。",
+    customP3:"たくさんの応募者をご用意して、あなたの会社でお仕事マッチを選びやすくします。",
+    customP4: "HAソリューションにコミットする際は、企業様と応募者様にトラブルがないよう、しっかりと管理させて頂きます。"
 }

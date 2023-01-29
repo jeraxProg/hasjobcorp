@@ -11,8 +11,12 @@ import {
   BodyContainer,
   BodyTitle,
   BodyDesc,
-  AboutUsDesc
+  AboutUsDesc,
+  BodyWrapper
 } from './components'
+
+import { CustomH2 } from '../Common/components';
+import { BodyWrapperInfo } from '../RecruitmentInfoPage/components';
 
 const AboutUsPage = () => {
   const { t:translate } = useTranslation();
@@ -30,36 +34,34 @@ const AboutUsPage = () => {
         </BannerContainer>
       </AboutUsBannerSection>
       <BodyContainer className="mt-5">
+        <BodyWrapperInfo>
         <BodyTitle className="mb-3">{translate('titleAbout')}</BodyTitle>
         <BodyDesc className="col-md-12">{translate('aboutHaSOlution')}</BodyDesc>
-        {/* <AboutUsDesc className="mt-5 mb-5">
-          <Row> */}
-        {/* <Col className="col-12 col-lg-6">
-              <Image
-                  // loader={myLoader}
-                  src={"/images/about-us-page/img-about2.png"}
-                  alt=""
-                  width={696}
-                  height={534}
-                  quality={100}
-              />
-            </Col> */}
-        {/* <Col className="mt-4 mt-lg-0 col-12 col-lg-6"> */}
+        </BodyWrapperInfo>
         <br />
+        <br />
+        <BodyWrapperInfo>
         <BodyTitle className="mb-3">{translate('missionTitle')}</BodyTitle>
         <BodyDesc>{translate('mission')}</BodyDesc>
+        </BodyWrapperInfo>
         <br />
         <br />
+        <BodyWrapperInfo>
         <BodyTitle className="mb-3">{translate('visionTitle')}</BodyTitle>
         <BodyDesc>{translate('vision')}
         </BodyDesc>
+        </BodyWrapperInfo>
         <br />
         <br />
-
-
-        {/* </Col> */}
-        {/* </Row>
-       </AboutUsDesc> */}
+        <BodyWrapperInfo>
+        <BodyTitle className="mb-3">{translate('value')}</BodyTitle>
+         <CustomH2>{translate('people')}</CustomH2>
+        <BodyDesc>{translate('peopleDesc')}
+        </BodyDesc>
+         <CustomH2>{translate('knowledge')}</CustomH2>
+        <BodyDesc>{translate('knowledgeDesc')}
+        </BodyDesc>
+        </BodyWrapperInfo>
       </BodyContainer>
     </AboutUsContainer>
   )

@@ -37,8 +37,8 @@ const Homepage = ({cat_list, employers}) => {
             <ContentContainer>
               <Row>
                 <CustomCol lg={6} xs={12}>  
-                  <CustomH1 >WELCOME TO HA SOLUTION!</CustomH1>
-                  <CustomH4>Empowering Job Seekers, Supporting Employers</CustomH4>
+                  <CustomH1 >{translate('welcome')}</CustomH1>
+                  <CustomH4>{translate('empowering')}</CustomH4>
                 </CustomCol>
                 {/* <CustomCol lg={6} className="d-none d-lg-block position-relative">
                   <CustomImage
@@ -107,7 +107,7 @@ const Homepage = ({cat_list, employers}) => {
                             <InputGroup className="h-100">
                               <CustomLabel className="input-group-text"><VscSymbolKeyword /></CustomLabel>
                                 <FormControl
-                                  placeholder="Keyword"
+                                  placeholder="Search Job Now"
                                   aria-describedby="basic-addon1"
                                   value={keyword} 
                                   onChange={(e) => handleChange(e, 'keyword')} 
