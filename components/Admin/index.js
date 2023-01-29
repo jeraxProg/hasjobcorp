@@ -1,46 +1,51 @@
-import { useState } from "react";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import { HiOutlineUserGroup } from "react-icons/hi";
-import { BsPerson } from "react-icons/bs";
-import AddEmployersComponent from "./AddEmployers";
-import EmployersComponent from "./Employers";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { useState } from "react"
+import Offcanvas from "react-bootstrap/Offcanvas"
+import { HiOutlineLogout, HiOutlineUserGroup } from "react-icons/hi"
+import { BsPerson } from "react-icons/bs"
+import AddEmployersComponent from "./AddEmployers"
+import EmployersComponent from "./Employers"
+import Button from "react-bootstrap/Button"
+import Modal from "react-bootstrap/Modal"
+import Link from "next/link"
 import {
   AdminContainer,
   CustomOffcanvas,
   CustomDiv,
   Content,
   CustomOffcanvasHeader,
-  AddEmpButton,
-} from "./components";
+  AddEmpButton
+} from "./components"
 
-const Admin = ({ employers, cat_list }) => {
-  const [show, setShow] = useState(false);
-  const [active, setActive] = useState("employers");
+const Admin = ({ employers, cat_list, adminState }) => {
+  const [show, setShow] = useState(false)
+  const [active, setActive] = useState("employers")
+
+  const { setLoggedIn } = adminState
 
   // For Modals
-  const [showModal, setShowModal] = useState(false);
-  const handleCloseModal = () => setShowModal(false);
-  const handleShowModal = () => setShowModal(true);
+  const [showModal, setShowModal] = useState(false)
+  const handleCloseModal = () => setShowModal(false)
+  const handleShowModal = () => setShowModal(true)
 
-  let component;
+  let component
 
-  const handleClose = () => setShow(false);
-  const toggleShow = () => setShow((s) => !s);
+  const handleClose = () => setShow(false)
+  const toggleShow = () => setShow(s => !s)
 
-  const handleActiveTab = (value) => {
-    setActive(value);
-  };
+  const handleActiveTab = value => {
+    setActive(value)
+  }
 
   if (employers) {
     if (active === "employers") {
       component = employers.map((employer, i) => {
-        return <EmployersComponent key={i} employer={employer} cat_list={cat_list} />;
-      });
-    } else if (active === "categories") {}
+        return (
+          <EmployersComponent key={i} employer={employer} cat_list={cat_list} />
+        )
+      })
+    } else if (active === "categories") {
+    }
   }
-
 
   return (
     <AdminContainer>
@@ -68,6 +73,12 @@ const Admin = ({ employers, cat_list }) => {
             <HiOutlineUserGroup />
             Company Jobs
           </CustomDiv>
+          <Link href="/">
+            <CustomDiv onClick={() => setLoggedIn(false)}>
+              <HiOutlineLogout />
+              Log Out
+            </CustomDiv>
+          </Link>
         </Offcanvas.Body>
       </CustomOffcanvas>
       <Content>
@@ -99,7 +110,7 @@ const Admin = ({ employers, cat_list }) => {
         </Modal>
       </Content>
     </AdminContainer>
-  );
-};
+  )
+}
 
-export default Admin;
+export default Admin
