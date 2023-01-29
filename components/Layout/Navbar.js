@@ -49,6 +49,9 @@ const NavbarComponent = () => {
        else if (route == 'recruitment-info') {
         router.push('/recruitment-info')
       }
+       else if (route == 'contact-us') {
+        router.push('/contact-us')
+      }
     }
 
     return (
@@ -76,6 +79,7 @@ const NavbarComponent = () => {
                     <CustomNav onClick={() => handleRoute('careers')} selected={router.pathname === '/careers'}>{translate('careers')}</CustomNav>
                     <CustomNav onClick={() => handleRoute('recruitment-info')} selected={router.pathname === '/recruitment-info'}>{translate('rectruitmentnav')}</CustomNav>
                     <CustomNav onClick={() => handleRoute('about-us')} selected={router.pathname === '/about-us'}>{translate('aboutus')}</CustomNav>
+                    <CustomNav onClick={() => handleRoute('contact-us')} selected={router.pathname === '/contact-us'}>{translate('contactus')}</CustomNav>
                     {/* <CustomNav href="/blogs" selected={router.pathname === '/blogs'}>Blogs</CustomNav> */}
                     {/* <Nav.Link href="#action2">Link</Nav.Link>
                     <NavDropdown

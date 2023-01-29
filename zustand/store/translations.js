@@ -36,6 +36,7 @@ export const translationsEn = {
     customP2:" We will mediate them so that the relationships between employees and customers can go well.",
     customP3:" We have lots of applicants and make it easier for you to find the most suitable ones for your company.",
     customP4:" When committing to an HA solution, we will manage it properly so that there is no trouble between the company and the applicant.",
+    contactus:"Contact Us"
 
 
     
@@ -78,5 +79,6 @@ export const translationsJa = {
     customP1: "HAソリューションは、あなたの会社の問題を回避するために良い応募者を見つけるのに役立ちます.",
     customP2: "従業員とお客様の関係を円滑に進められるよう仲介いたします。",
     customP3:"たくさんの応募者をご用意して、あなたの会社でお仕事マッチを選びやすくします。",
-    customP4: "HAソリューションにコミットする際は、企業様と応募者様にトラブルがないよう、しっかりと管理させて頂きます。"
+    customP4: "HAソリューションにコミットする際は、企業様と応募者様にトラブルがないよう、しっかりと管理させて頂きます。",
+    contactus: "お問い合わせ",
 }

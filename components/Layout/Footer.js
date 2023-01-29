@@ -33,10 +33,10 @@ const Footer = () => {
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
                 <Title className="mb-4">Resources</Title>
                 <ItemsContainer className="d-flex">
-                    <Items onClick={() => router.push('/about-us')}>About us</Items>
-                    {/* <Items>Our Team</Items> */}
-                    {/* <Items>Products</Items> */}
                     <Items onClick={() => router.push('/careers')}>Careers</Items>
+                    <Items onClick={() => router.push('/recruitment-info')}>Recruitment Information</Items>
+                    <Items onClick={() => router.push('/about-us')}>About Us</Items>
+                    <Items onClick={() => router.push('/contact-us')}>Contact Us</Items>
                 </ItemsContainer>
             </Col>
             {/* <Col className="col-12 col-sm-6 col-md-6 col-lg-2 mb-4">
