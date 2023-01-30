@@ -57,6 +57,7 @@ const Ads = () => {
                                 width={500}
                                 height={400}
                                 quality={100}
+                                priority={true}
                             />
                         </FigureImage>
                     </BoxImageJob>

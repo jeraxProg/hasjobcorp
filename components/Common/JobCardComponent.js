@@ -50,8 +50,8 @@ const JobCardComponent = (props) => {
             // loader={myLoader}
             src={imgSrc}
             alt=""
-            width={52}
-            height={52}
+            width={100}
+            height={100}
             quality={100}
         />
         <JobsCardTitleContainer>
