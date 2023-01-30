@@ -31,12 +31,12 @@ const Footer = () => {
                 <FooterDesc>{translate('footerDesc')}</FooterDesc>
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
-                <Title className="mb-4">Resources</Title>
+                <Title className="mb-4">{translate('resources')}</Title>
                 <ItemsContainer className="d-flex">
-                    <Items onClick={() => router.push('/careers')}>Careers</Items>
-                    <Items onClick={() => router.push('/recruitment-info')}>Recruitment Information</Items>
-                    <Items onClick={() => router.push('/about-us')}>About Us</Items>
-                    <Items onClick={() => router.push('/contact-us')}>Contact Us</Items>
+                    <Items onClick={() => router.push('/careers')}>{translate('careers')}</Items>
+                    <Items onClick={() => router.push('/recruitment-info')}>{translate('rectruitmentnav')}</Items>
+                    <Items onClick={() => router.push('/about-us')}>{translate('aboutus')}</Items>
+                    <Items onClick={() => router.push('/contact-us')}>{translate('contactus')}</Items>
                 </ItemsContainer>
             </Col>
             {/* <Col className="col-12 col-sm-6 col-md-6 col-lg-2 mb-4">
@@ -58,7 +58,6 @@ const Footer = () => {
                 </ItemsContainer>
             </Col> */}
             <Col className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
-                <Title className="mb-4">More</Title>
                 <ItemsContainer className="d-flex">
                     {/* <Items>Privacy</Items>
                     <Items>Help</Items>
@@ -66,8 +65,8 @@ const Footer = () => {
                     <Items>
                         Language:
                         <CustomFormSelect size="sm" name="language" onChange={(e) => onChangeTranslate(e)} value={language}>
-                            <option value="en">English</option>
                             <option value="ja">Japanese</option>
+                            <option value="en">English</option>
                         </CustomFormSelect>
                     </Items>
                 </ItemsContainer>

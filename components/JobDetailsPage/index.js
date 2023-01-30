@@ -8,6 +8,7 @@ import JobDetailComponent from './JobDetailComponent.js';
 import parse from 'html-react-parser';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 import {
     JobDetailsContainer, 
     JobDetailColumn, 
@@ -32,6 +33,7 @@ import {
 
 const JobDetailsPage = ({employer}) => {
     const router = useRouter();
+    const { t:translate } = useTranslation();
 
   return (
     <JobDetailsContainer>
@@ -46,7 +48,7 @@ const JobDetailsPage = ({employer}) => {
                         </JobsCardBodySubTitleContainer>
                     </Col>
                     <Col className="col-12 col-lg-4">
-                        <ApplyNowButton href={employer.google_form_link} target="_blank"><BsPatchCheck />Apply Now!</ApplyNowButton>
+                        <ApplyNowButton href={employer.google_form_link} target="_blank"><BsPatchCheck />{translate('applynow')}!</ApplyNowButton>
                     </Col>
                 </Row>
                 <hr className="mt-5" />
@@ -70,8 +72,8 @@ const JobDetailsPage = ({employer}) => {
                             workDesc={employer.cat_of_industry}
                         />
                         <JobDetailComponent 
-                            img={`job-level`} 
-                            textDesc={`Job level`} 
+                            img={`language-3`} 
+                            textDesc={`Japanese Languge Level`} 
                             workDesc={employer.experienced_level}
                         />
                         <JobDetailComponent 
@@ -113,7 +115,7 @@ const JobDetailsPage = ({employer}) => {
                 <hr className="mt-5" />
                 <Row className="pt-4 pb-4">
                     <Col>
-                        <ApplyButton href={employer.google_form_link} target="_blank">Apply Now</ApplyButton>
+                        <ApplyButton href={employer.google_form_link} target="_blank">{translate('applynow')}</ApplyButton>
                     </Col>
                 </Row>
             </JobDetailColumn>

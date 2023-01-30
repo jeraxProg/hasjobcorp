@@ -107,7 +107,7 @@ const Homepage = ({cat_list, employers}) => {
                             <InputGroup className="h-100">
                               <CustomLabel className="input-group-text"><VscSymbolKeyword /></CustomLabel>
                                 <FormControl
-                                  placeholder="Search Job Now"
+                                  placeholder={translate('searchjobnow')}
                                   aria-describedby="basic-addon1"
                                   value={keyword} 
                                   onChange={(e) => handleChange(e, 'keyword')} 

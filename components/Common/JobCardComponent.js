@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useRouter } from 'next/router'
 import { BiCategoryAlt } from 'react-icons/bi';
+import { useTranslation } from 'react-i18next';
 import {
     JobsCard,
     JobsCardHeader,
@@ -27,6 +28,7 @@ import {
 
 
 const JobCardComponent = (props) => {
+    const { t:translate } = useTranslation();
     const {imgSrc,
         cardTitle,
         location,
@@ -73,10 +75,10 @@ const JobCardComponent = (props) => {
         <Row className="price-per-hour">
             <Col>
                 <JobsCardPrice>{jobSalary}</JobsCardPrice>
-                <JobsCardHour className="text-muted">/Hour</JobsCardHour>
+                <JobsCardHour className="text-muted">/{translate('hour')}</JobsCardHour>
             </Col>
             <Col className="d-flex justify-content-end apply-btn-container">
-                <JobsCardButton className="apply-btn" onClick={() =>  router.push(`/job-details/${keyId}`)}>Apply Now</JobsCardButton>
+                <JobsCardButton className="apply-btn" onClick={() =>  router.push(`/job-details/${keyId}`)}>{translate('applynow')}</JobsCardButton>
             </Col>
         </Row>
         </JobsCardBody>

@@ -6,12 +6,14 @@ export const translationsEn = {
     jobsoftheday: "Jobs of the Day",
     search: "Search",
     applynow: "Apply Now",
+    hour: "Hour",
     weare: "We are",
     hiring: "HIRING",
     millionsofjobs: "Millions of Jobs",
     findtherightone: "Find The One That's <span>Right</span> For You",
-    adsDesc: "Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide. The right job is out there.",
+    adsDesc: "Search all the open positions on the web.The right job is out there.",
     searchjobs: "Search Jobs", 
+    searchjobnow: "Search Job Now",
     logo: "HA Solutions",
     availablenow:"Available Now",
     totalJobs: "Total Jobs",
@@ -36,25 +38,29 @@ export const translationsEn = {
     customP2:" We will mediate them so that the relationships between employees and customers can go well.",
     customP3:" We have lots of applicants and make it easier for you to find the most suitable ones for your company.",
     customP4:" When committing to an HA solution, we will manage it properly so that there is no trouble between the company and the applicant.",
-    contactus:"Contact Us"
+    contactus:"Contact Us",
+    resources: "Resources"
 
 
     
 }
 
 export const translationsJa = { 
+   
     home: "ホームページ", 
     careers: "キャリア",
     aboutus: "私たちに関しては",
     browsebycategory: "カテゴリ別に閲覧",
     jobsoftheday: "今日の仕事",
     search: "検索",
+    searchjobnow:"今すぐ仕事を検索",
     applynow: "今すぐ申し込む",
+    hour: "時間",
     weare: "私たちです",
     hiring: "雇用",
     millionsofjobs: "何百万もの仕事",
     findtherightone: "あなたにぴったりのものを見つけてください",
-    adsDesc: "ウェブ上のすべての募集中のポジションを検索. 独自のパーソナライズされた給与見積もりを取得する. 世界中の 600,000 社を超える企業のレビューを読む. 適切な仕事はそこにあります.",
+    adsDesc: "ウェブサイトで募集中のポジションをすべて検索します。適切な仕事はそこにあります。",
     searchjobs: "求人を探す",
     logo: "HA ソリューション" ,
     availablenow:"今すぐ利用可能",
@@ -81,4 +87,5 @@ export const translationsJa = {
     customP3:"たくさんの応募者をご用意して、あなたの会社でお仕事マッチを選びやすくします。",
     customP4: "HAソリューションにコミットする際は、企業様と応募者様にトラブルがないよう、しっかりと管理させて頂きます。",
     contactus: "お問い合わせ",
+    resources: "資力"
 }

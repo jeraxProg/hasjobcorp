@@ -1,3 +1,3 @@
-const baseUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : 'https://job-portal-proj.vercel.app/' ;
+const baseUrl = process.env.NODE_ENV !== 'production' ? "http://localhost:3000" : 'https://hascorpjob.vercel.app/' ;
 
 module.exports = baseUrl;

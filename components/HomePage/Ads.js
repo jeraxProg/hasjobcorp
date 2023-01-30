@@ -63,7 +63,7 @@ const Ads = () => {
                 </Col>
                 <Col className="col-12 col-lg-6">
                     <ContentJobInner>
-                        <MillionJobs className="text-muted">{translate('millionsofjobs')}.</MillionJobs>
+                        {/* <MillionJobs className="text-muted">{translate('millionsofjobs')}.</MillionJobs> */}
                         <FindJobs className="mb-5">
                             <Trans components={{ span: <SpanRight />}}>
                                 findtherightone

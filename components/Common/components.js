@@ -379,10 +379,12 @@ export const JobsCardPrice = styled.span `
     color: ${props => props.theme.common.primary};
     font-family: ${props => props.theme.common.primary_font};
     font-weight: 700;
-    font-size: 22px;
+    font-size: 17px;
 `
 
-export const JobsCardHour = styled.span ``
+export const JobsCardHour = styled.span `
+font-size: 17px;
+`
 
 export const JobsCardButton = styled(Button) `
     background-color: #e0e6f7;

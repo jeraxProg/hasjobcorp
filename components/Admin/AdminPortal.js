@@ -11,7 +11,7 @@ export default function AdminPortal({ loggedIn, setLoggedIn }) {
 
   const admin = {
     userName: "admin",
-    password: "123"
+    password: "admin123" 
   }
 
   const handleSubmit = () => {

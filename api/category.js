@@ -7,7 +7,7 @@ const CategoryModel = require("../models/CategoryModel");
 router.get("/category-list", async (req, res) => {
   try {
     let match = {}
-    // const categories = await CategoryModel.find();
+    const categories = await CategoryModel.find();
 
     let show;
 

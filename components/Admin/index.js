@@ -15,6 +15,7 @@ import {
   CustomOffcanvasHeader,
   AddEmpButton
 } from "./components"
+import { Stack } from "react-bootstrap"
 
 const Admin = ({ employers, cat_list, adminState }) => {
   const [show, setShow] = useState(false)
@@ -89,7 +90,7 @@ const Admin = ({ employers, cat_list, adminState }) => {
         )}
         <br />
         <br />
-        {component}
+       <Stack style={{flexWrap:"wrap"}} gap={3} direction="horizontal">{component}</Stack> 
         <Modal
           show={showModal}
           onHide={handleCloseModal}

@@ -32,6 +32,9 @@ export const CustomContainer = styled(Container) `
     position: relative;
     background-position: 80% 15%;
     background-attachment: fixed;
+    @media (max-width: 992px) {
+    background-image: none;
+    }
 `
 
 export const ContainerSection = styled(Container) `
