@@ -54,7 +54,7 @@ const Ads = () => {
                                 // loader={myLoader}
                                 src="/images/home-page/img1.png"
                                 alt=""
-                                width={500}
+                                width={500 }
                                 height={400}
                                 quality={100}
                                 priority={true}

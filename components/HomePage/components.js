@@ -25,7 +25,7 @@ export const Subtitle = styled.h3 `
 
 // TITLE SECTION
 export const CustomContainer = styled(Container) `
-    background-image: url('/images/jobs-detail-page/ha.png');
+    background-image: url('./images/jobs-detail-page/ha.png');
     background-size: 50% auto;
     background-color: #f6f6f6;
     background-repeat: no-repeat;
@@ -436,6 +436,8 @@ export const FigureImage = styled.div `
     display: flex;
     justify-content: center;
     position: relative;
+    width: auto;
+    height: auto;
 
     & > img {
         border-radius: 32px;
