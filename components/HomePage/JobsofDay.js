@@ -21,7 +21,7 @@ const JobsofDay = ({employers, cat_list}) => {
     setIsSelected} = useHooks();
 
   const { t:translate } = useTranslation();
-  let filterEmployers = (employers || employers.lenght).filter((employer) => employer.cat_of_industry === isSelected)
+  let filterEmployers = (employers || [null]).filter((employer) => employer.cat_of_industry === isSelected)
 
 
   return (
