@@ -11,7 +11,7 @@ const HomePage = ({employers, cat_list, cat_length}) => {
       <TitleSection cat_list={cat_list} employers={employers} />
       <Ads />
       <BrowseByCategory cat_list={cat_list} cat_length={cat_length} />
-      <JobsofDay employers={employers || []} cat_list={cat_list} />
+      <JobsofDay employers={employers} cat_list={cat_list} />
     </>
   )
 }

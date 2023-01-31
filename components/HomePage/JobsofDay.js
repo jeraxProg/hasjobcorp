@@ -21,7 +21,7 @@ const JobsofDay = ({employers, cat_list}) => {
   const {isSelected,
     setIsSelected} = useHooks();
 
-  let filterEmployers = employers.filter((employer) => employer.cat_of_industry === isSelected)
+  let filterEmployers = employers ? employers.filter((employer) => employer.cat_of_industry === isSelected) : [];
 
 
   return (
