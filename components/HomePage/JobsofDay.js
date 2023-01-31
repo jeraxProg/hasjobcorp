@@ -16,11 +16,11 @@ import {
 } from './components'
 
 const JobsofDay = ({employers, cat_list}) => {
+  const { t:translate } = useTranslation();
 
   const {isSelected,
     setIsSelected} = useHooks();
 
-  const { t:translate } = useTranslation();
   let filterEmployers = employers.filter((employer) => employer.cat_of_industry === isSelected)
 
 
